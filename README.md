@@ -9,6 +9,7 @@ More info can be found on my blog: [https://blog.tyang.org/2018/08/24/powershell
 ## Module Dependency
 
 | Name | Minimum Version |
+| :--: | :-------------: |
 | PowerShellGet | 1.0.0.1 |
 | Pester | 5.3.1 |
 | PSScriptAnalyzer | 1.20.0 |
