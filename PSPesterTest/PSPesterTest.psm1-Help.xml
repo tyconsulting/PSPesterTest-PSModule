@@ -1,514 +1,514 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <helpItems xmlns="http://msh" schema="maml">
-	<!--Edited with: SAPIEN PowerShell HelpWriter 2018 v2.2.39-->
-	<!--All Commands-->
-	<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
-		<!--TAG: HASCOMMONPARAMETERS-->
-		<!--Command-->
-		<command:details>
-			<command:name>Test-ImportModule</command:name>
-			<maml:description>
-				<maml:para>Perform Pester Test to test PowerShell module import</maml:para>
-			</maml:description>
-			<maml:copyright>
-				<maml:para></maml:para>
-			</maml:copyright>
-			<command:verb>Test</command:verb>
-			<command:noun>ImportModule</command:noun>
-			<dev:version />
-		</command:details>
-		<maml:description>
-			<maml:para></maml:para>
-		</maml:description>
-		<command:syntax>
-			<!--Parameter Sets-->
-			<command:syntaxItem parametersetname="NoOutputFile">
-				<!--NAME: NoOutputFile-->
-				<maml:name>Test-ImportModule</maml:name>
-				<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
-					<maml:name>ModulePath</maml:name>
-					<maml:description>
-						<maml:para>The path to the PowerShell module that is being tested</maml:para>
-					</maml:description>
-					<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-					<dev:type>
-						<maml:name>String</maml:name>
-						<maml:uri />
-					</dev:type>
-					<dev:defaultValue></dev:defaultValue>
-				</command:parameter>
-			</command:syntaxItem>
-			<command:syntaxItem parametersetname="ProduceOutputFile">
-				<!--NAME: ProduceOutputFile-->
-				<maml:name>Test-ImportModule</maml:name>
-				<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
-					<maml:name>ModulePath</maml:name>
-					<maml:description>
-						<maml:para>The path to the PowerShell module that is being tested</maml:para>
-					</maml:description>
-					<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-					<dev:type>
-						<maml:name>String</maml:name>
-						<maml:uri />
-					</dev:type>
-					<dev:defaultValue></dev:defaultValue>
-				</command:parameter>
-				<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
-					<maml:name>OutputFile</maml:name>
-					<maml:description>
-						<maml:para>Pester test output (xml) file</maml:para>
-					</maml:description>
-					<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-					<dev:type>
-						<maml:name>String</maml:name>
-						<maml:uri />
-					</dev:type>
-					<dev:defaultValue></dev:defaultValue>
-				</command:parameter>
-				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
-					<maml:name>OutputFormat</maml:name>
-					<maml:description>
-						<maml:para>Pester test output format. Possible values are: 'NUnitXml', 'LegacyNUnitXML'</maml:para>
-					</maml:description>
-					<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-					<command:parameterValueGroup>
-						<command:parameterValue required="false" variableLength="false">NUnitXml</command:parameterValue>
-						<command:parameterValue required="false" variableLength="false">LegacyNUnitXML</command:parameterValue>
-					</command:parameterValueGroup>
-					<dev:type>
-						<maml:name>String</maml:name>
-						<maml:uri />
-					</dev:type>
-					<dev:defaultValue></dev:defaultValue>
-				</command:parameter>
-			</command:syntaxItem>
-		</command:syntax>
-		<command:parameters>
-			<!--All Parameters-->
-			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="False" position="named">
-				<maml:name>ModulePath</maml:name>
-				<maml:description>
-					<maml:para>The path to the PowerShell module that is being tested</maml:para>
-				</maml:description>
-				<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-				<dev:type>
-					<maml:name>String</maml:name>
-					<maml:uri />
-				</dev:type>
-				<dev:defaultValue></dev:defaultValue>
-			</command:parameter>
-			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="False" position="named">
-				<maml:name>OutputFile</maml:name>
-				<maml:description>
-					<maml:para>Pester test output (xml) file</maml:para>
-				</maml:description>
-				<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-				<dev:type>
-					<maml:name>String</maml:name>
-					<maml:uri />
-				</dev:type>
-				<dev:defaultValue></dev:defaultValue>
-			</command:parameter>
-			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="False" position="named">
-				<maml:name>OutputFormat</maml:name>
-				<maml:description>
-					<maml:para>Pester test output format. Possible values are: 'NUnitXml', 'LegacyNUnitXML'</maml:para>
-				</maml:description>
-				<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-				<command:parameterValueGroup>
-					<command:parameterValue required="false" variableLength="false">NUnitXml</command:parameterValue>
-					<command:parameterValue required="false" variableLength="false">LegacyNUnitXML</command:parameterValue>
-				</command:parameterValueGroup>
-				<dev:type>
-					<maml:name>String</maml:name>
-					<maml:uri />
-				</dev:type>
-				<dev:defaultValue></dev:defaultValue>
-			</command:parameter>
-		</command:parameters>
-		<command:inputTypes>
-			<!--Inputs-->
-			<command:inputType>
-				<dev:type>
-					<maml:name>None
+  <!--Edited with: SAPIEN PowerShell HelpWriter 2018 v2.2.39-->
+  <!--All Commands-->
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+    <!--TAG: HASCOMMONPARAMETERS-->
+    <!--Command-->
+    <command:details>
+      <command:name>Test-ImportModule</command:name>
+      <maml:description>
+        <maml:para>Perform Pester Test to test PowerShell module import</maml:para>
+      </maml:description>
+      <maml:copyright>
+        <maml:para></maml:para>
+      </maml:copyright>
+      <command:verb>Test</command:verb>
+      <command:noun>ImportModule</command:noun>
+      <dev:version />
+    </command:details>
+    <maml:description>
+      <maml:para></maml:para>
+    </maml:description>
+    <command:syntax>
+      <!--Parameter Sets-->
+      <command:syntaxItem parametersetname="NoOutputFile">
+        <!--NAME: NoOutputFile-->
+        <maml:name>Test-ImportModule</maml:name>
+        <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+          <maml:name>ModulePath</maml:name>
+          <maml:description>
+            <maml:para>The path to the PowerShell module that is being tested</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue></dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem parametersetname="ProduceOutputFile">
+        <!--NAME: ProduceOutputFile-->
+        <maml:name>Test-ImportModule</maml:name>
+        <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+          <maml:name>ModulePath</maml:name>
+          <maml:description>
+            <maml:para>The path to the PowerShell module that is being tested</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue></dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+          <maml:name>OutputFile</maml:name>
+          <maml:description>
+            <maml:para>Pester test output (xml) file</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue></dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+          <maml:name>OutputFormat</maml:name>
+          <maml:description>
+            <maml:para>Pester test output format. Possible values are: 'NUnitXml', 'LegacyNUnitXML'</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" variableLength="false">NUnitXml</command:parameterValue>
+            <command:parameterValue required="false" variableLength="false">LegacyNUnitXML</command:parameterValue>
+          </command:parameterValueGroup>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue></dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <!--All Parameters-->
+      <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="False" position="named">
+        <maml:name>ModulePath</maml:name>
+        <maml:description>
+          <maml:para>The path to the PowerShell module that is being tested</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="False" position="named">
+        <maml:name>OutputFile</maml:name>
+        <maml:description>
+          <maml:para>Pester test output (xml) file</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="False" position="named">
+        <maml:name>OutputFormat</maml:name>
+        <maml:description>
+          <maml:para>Pester test output format. Possible values are: 'NUnitXml', 'LegacyNUnitXML'</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <command:parameterValueGroup>
+          <command:parameterValue required="false" variableLength="false">NUnitXml</command:parameterValue>
+          <command:parameterValue required="false" variableLength="false">LegacyNUnitXML</command:parameterValue>
+        </command:parameterValueGroup>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <!--Inputs-->
+      <command:inputType>
+        <dev:type>
+          <maml:name>None
 </maml:name>
-					<maml:uri></maml:uri>
-				</dev:type>
-				<maml:description>
-					<maml:para></maml:para>
-				</maml:description>
-			</command:inputType>
-		</command:inputTypes>
-		<command:returnValues>
-			<!--Outputs-->
-			<command:returnValue>
-				<dev:type>
-					<maml:name>System.Object</maml:name>
-					<maml:uri></maml:uri>
-				</dev:type>
-				<maml:description>
-					<maml:para></maml:para>
-				</maml:description>
-			</command:returnValue>
-		</command:returnValues>
-		<command:examples>
-			<!--Examples-->
-			<command:example>
-				<maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
-				<maml:introduction>
-					<maml:para />
-				</maml:introduction>
-				<dev:code>C:\PS&gt; Test-ImportModule -ModulePath "C:\Git\MyPowerShellModule"</dev:code>
-				<dev:remarks>
-					<maml:para>Test PowerShell module import and display result on the Powershell host</maml:para>
-				</dev:remarks>
-			</command:example>
-			<command:example xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10">
-				<maml:title xmlns:maml="http://schemas.microsoft.com/maml/2004/10">-------------------------- EXAMPLE 2 --------------------------</maml:title>
-				<maml:introduction xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
-					<maml:para />
-				</maml:introduction>
-				<dev:code xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">C:\PS&gt; Test-ImportModule -ModulePath "C:\Git\MyPowerShellModule" -OutputFile "C:\Temp\TestResult.xml"</dev:code>
-				<dev:remarks xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
-					<maml:para>Test PowerShell module import, in addition to displaying result on the Powershell host, also store the test result to a file</maml:para>
-				</dev:remarks>
-			</command:example>
-			<command:example xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10">
-				<maml:title xmlns:maml="http://schemas.microsoft.com/maml/2004/10">-------------------------- EXAMPLE 3 --------------------------</maml:title>
-				<maml:introduction xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
-					<maml:para />
-				</maml:introduction>
-				<dev:code xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">C:\PS&gt; Test-ImportModule -ModulePath "C:\Git\MyPowerShellModule" -OutputFile "C:\Temp\TestResult.xml" -OutputFormat 'LegacyNUnitXML'</dev:code>
-				<dev:remarks xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
-					<maml:para>Test PowerShell module import, in addition to displaying result on the Powershell host, also store the test result to a file using the 'LegacyNUnitXML' format</maml:para>
-				</dev:remarks>
-			</command:example>
-		</command:examples>
-	</command:command>
-	<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
-		<!--TAG: HASCOMMONPARAMETERS-->
-		<!--Command-->
-		<command:details>
-			<command:name>Test-PSScriptAnalyzerRule</command:name>
-			<maml:description>
-				<maml:para>Perform Pester Test to test PowerShell scripts using PowerShell Script Analzyer</maml:para>
-			</maml:description>
-			<maml:copyright>
-				<maml:para></maml:para>
-			</maml:copyright>
-			<command:verb>Test</command:verb>
-			<command:noun>PSScriptAnalyzerRule</command:noun>
-			<dev:version />
-		</command:details>
-		<maml:description>
-			<maml:para></maml:para>
-		</maml:description>
-		<command:syntax>
-			<!--Parameter Sets-->
-			<command:syntaxItem parametersetname="NoOutputFile">
-				<!--NAME: NoOutputFile-->
-				<maml:name>Test-PSScriptAnalyzerRule</maml:name>
-				<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
-					<maml:name>Path</maml:name>
-					<maml:description>
-						<maml:para>Path to the PowerShell script(s) to be tested. This can be a folder path, or path to a PowerShell script file (.ps1, .psd1 and .psm1)</maml:para>
-					</maml:description>
-					<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-					<dev:type>
-						<maml:name>String</maml:name>
-						<maml:uri />
-					</dev:type>
-					<dev:defaultValue></dev:defaultValue>
-				</command:parameter>
-				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
-					<maml:name>recurse</maml:name>
-					<maml:description>
-						<maml:para>When the path is referencing a directory, use -recurse parameter to retrieve all PowerShell scripts within the directory and all its sub-directories.</maml:para>
-					</maml:description>
-					<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
-					<dev:type>
-						<maml:name>SwitchParameter</maml:name>
-						<maml:uri />
-					</dev:type>
-					<dev:defaultValue></dev:defaultValue>
-				</command:parameter>
-				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
-					<maml:name>CustomRulePath</maml:name>
-					<maml:description>
-						<maml:para>Specify the directory that contains custom PowerShell Script Analyzer rules. When specified, all custom rules located in this directory and its sub-directories will be retrieved and used</maml:para>
-					</maml:description>
-					<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-					<dev:type>
-						<maml:name>String</maml:name>
-						<maml:uri />
-					</dev:type>
-					<dev:defaultValue></dev:defaultValue>
-				</command:parameter>
-				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
-					<maml:name>MinimumSeverityLevel</maml:name>
-					<maml:description>
-						<maml:para>Specify the minimum severity level that is going be flagged in the PS Script Analyzer test. Possible values are "Information", "Warning" and "Error". The default value is "Error"
+          <maml:uri></maml:uri>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <!--Outputs-->
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+          <maml:uri></maml:uri>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <command:examples>
+      <!--Examples-->
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <maml:introduction>
+          <maml:para />
+        </maml:introduction>
+        <dev:code>C:\PS&gt; Test-ImportModule -ModulePath "C:\Git\MyPowerShellModule"</dev:code>
+        <dev:remarks>
+          <maml:para>Test PowerShell module import and display result on the Powershell host</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10">
+        <maml:title xmlns:maml="http://schemas.microsoft.com/maml/2004/10">-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <maml:introduction xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
+          <maml:para />
+        </maml:introduction>
+        <dev:code xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">C:\PS&gt; Test-ImportModule -ModulePath "C:\Git\MyPowerShellModule" -OutputFile "C:\Temp\TestResult.xml"</dev:code>
+        <dev:remarks xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+          <maml:para>Test PowerShell module import, in addition to displaying result on the Powershell host, also store the test result to a file</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10">
+        <maml:title xmlns:maml="http://schemas.microsoft.com/maml/2004/10">-------------------------- EXAMPLE 3 --------------------------</maml:title>
+        <maml:introduction xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
+          <maml:para />
+        </maml:introduction>
+        <dev:code xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">C:\PS&gt; Test-ImportModule -ModulePath "C:\Git\MyPowerShellModule" -OutputFile "C:\Temp\TestResult.xml" -OutputFormat 'LegacyNUnitXML'</dev:code>
+        <dev:remarks xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+          <maml:para>Test PowerShell module import, in addition to displaying result on the Powershell host, also store the test result to a file using the 'LegacyNUnitXML' format</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+    <!--TAG: HASCOMMONPARAMETERS-->
+    <!--Command-->
+    <command:details>
+      <command:name>Test-PSScriptAnalyzerRule</command:name>
+      <maml:description>
+        <maml:para>Perform Pester Test to test PowerShell scripts using PowerShell Script Analzyer</maml:para>
+      </maml:description>
+      <maml:copyright>
+        <maml:para></maml:para>
+      </maml:copyright>
+      <command:verb>Test</command:verb>
+      <command:noun>PSScriptAnalyzerRule</command:noun>
+      <dev:version />
+    </command:details>
+    <maml:description>
+      <maml:para></maml:para>
+    </maml:description>
+    <command:syntax>
+      <!--Parameter Sets-->
+      <command:syntaxItem parametersetname="NoOutputFile">
+        <!--NAME: NoOutputFile-->
+        <maml:name>Test-PSScriptAnalyzerRule</maml:name>
+        <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+          <maml:name>Path</maml:name>
+          <maml:description>
+            <maml:para>Path to the PowerShell script(s) to be tested. This can be a folder path, or path to a PowerShell script file (.ps1, .psd1 and .psm1)</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue></dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+          <maml:name>recurse</maml:name>
+          <maml:description>
+            <maml:para>When the path is referencing a directory, use -recurse $true parameter to retrieve all PowerShell scripts within the directory and all its sub-directories.</maml:para>
+          </maml:description>
+          <command:parameterValue required="false" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue></dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+          <maml:name>CustomRulePath</maml:name>
+          <maml:description>
+            <maml:para>Specify the directory that contains custom PowerShell Script Analyzer rules. When specified, all custom rules located in this directory and its sub-directories will be retrieved and used</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue></dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+          <maml:name>MinimumSeverityLevel</maml:name>
+          <maml:description>
+            <maml:para>Specify the minimum severity level that is going be flagged in the PS Script Analyzer test. Possible values are "Information", "Warning" and "Error". The default value is "Error"
 When "Information" is used, rule violations with Information severity and above will be reported (Information, Warning and Error). This is the most comprehensive setting
 When "Warning" is used, rule violations with Warning severity and above will be reported (Warning and Error).
 When the default value "Error" is used, only rule violations with Error severity will be reported.</maml:para>
-					</maml:description>
-					<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-					<command:parameterValueGroup>
-						<command:parameterValue required="false" variableLength="false">Information</command:parameterValue>
-						<command:parameterValue required="false" variableLength="false">Warning</command:parameterValue>
-						<command:parameterValue required="false" variableLength="false">Error</command:parameterValue>
-					</command:parameterValueGroup>
-					<dev:type>
-						<maml:name>String</maml:name>
-						<maml:uri />
-					</dev:type>
-					<dev:defaultValue></dev:defaultValue>
-				</command:parameter>
-			</command:syntaxItem>
-			<command:syntaxItem parametersetname="ProduceOutputFile">
-				<!--NAME: ProduceOutputFile-->
-				<maml:name>Test-PSScriptAnalyzerRule</maml:name>
-				<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
-					<maml:name>Path</maml:name>
-					<maml:description>
-						<maml:para>Path to the PowerShell script(s) to be tested. This can be a folder path, or path to a PowerShell script file (.ps1, .psd1 and .psm1)</maml:para>
-					</maml:description>
-					<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-					<dev:type>
-						<maml:name>String</maml:name>
-						<maml:uri />
-					</dev:type>
-					<dev:defaultValue></dev:defaultValue>
-				</command:parameter>
-				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
-					<maml:name>recurse</maml:name>
-					<maml:description>
-						<maml:para>When the path is referencing a directory, use -recurse parameter to retrieve all PowerShell scripts within the directory and all its sub-directories.</maml:para>
-					</maml:description>
-					<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
-					<dev:type>
-						<maml:name>SwitchParameter</maml:name>
-						<maml:uri />
-					</dev:type>
-					<dev:defaultValue></dev:defaultValue>
-				</command:parameter>
-				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
-					<maml:name>CustomRulePath</maml:name>
-					<maml:description>
-						<maml:para>Specify the directory that contains custom PowerShell Script Analyzer rules. When specified, all custom rules located in this directory and its sub-directories will be retrieved and used</maml:para>
-					</maml:description>
-					<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-					<dev:type>
-						<maml:name>String</maml:name>
-						<maml:uri />
-					</dev:type>
-					<dev:defaultValue></dev:defaultValue>
-				</command:parameter>
-				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
-					<maml:name>MinimumSeverityLevel</maml:name>
-					<maml:description>
-						<maml:para>Specify the minimum severity level that is going be flagged in the PS Script Analyzer test. Possible values are "Information", "Warning" and "Error". The default value is "Error"
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" variableLength="false">Information</command:parameterValue>
+            <command:parameterValue required="false" variableLength="false">Warning</command:parameterValue>
+            <command:parameterValue required="false" variableLength="false">Error</command:parameterValue>
+          </command:parameterValueGroup>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue></dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem parametersetname="ProduceOutputFile">
+        <!--NAME: ProduceOutputFile-->
+        <maml:name>Test-PSScriptAnalyzerRule</maml:name>
+        <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+          <maml:name>Path</maml:name>
+          <maml:description>
+            <maml:para>Path to the PowerShell script(s) to be tested. This can be a folder path, or path to a PowerShell script file (.ps1, .psd1 and .psm1)</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue></dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+          <maml:name>recurse</maml:name>
+          <maml:description>
+            <maml:para>When the path is referencing a directory, use -recurse $true parameter to retrieve all PowerShell scripts within the directory and all its sub-directories.</maml:para>
+          </maml:description>
+          <command:parameterValue required="false" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue></dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+          <maml:name>CustomRulePath</maml:name>
+          <maml:description>
+            <maml:para>Specify the directory that contains custom PowerShell Script Analyzer rules. When specified, all custom rules located in this directory and its sub-directories will be retrieved and used</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue></dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+          <maml:name>MinimumSeverityLevel</maml:name>
+          <maml:description>
+            <maml:para>Specify the minimum severity level that is going be flagged in the PS Script Analyzer test. Possible values are "Information", "Warning" and "Error". The default value is "Error"
 When "Information" is used, rule violations with Information severity and above will be reported (Information, Warning and Error). This is the most comprehensive setting
 When "Warning" is used, rule violations with Warning severity and above will be reported (Warning and Error).
 When the default value "Error" is used, only rule violations with Error severity will be reported.</maml:para>
-					</maml:description>
-					<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-					<command:parameterValueGroup>
-						<command:parameterValue required="false" variableLength="false">Information</command:parameterValue>
-						<command:parameterValue required="false" variableLength="false">Warning</command:parameterValue>
-						<command:parameterValue required="false" variableLength="false">Error</command:parameterValue>
-					</command:parameterValueGroup>
-					<dev:type>
-						<maml:name>String</maml:name>
-						<maml:uri />
-					</dev:type>
-					<dev:defaultValue></dev:defaultValue>
-				</command:parameter>
-				<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
-					<maml:name>OutputFile</maml:name>
-					<maml:description>
-						<maml:para>Pester test output (xml) file</maml:para>
-					</maml:description>
-					<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-					<dev:type>
-						<maml:name>String</maml:name>
-						<maml:uri />
-					</dev:type>
-					<dev:defaultValue></dev:defaultValue>
-				</command:parameter>
-				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
-					<maml:name>OutputFormat</maml:name>
-					<maml:description>
-						<maml:para>Pester test output format. Possible values are: 'NUnitXml', 'LegacyNUnitXML'</maml:para>
-					</maml:description>
-					<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-					<command:parameterValueGroup>
-						<command:parameterValue required="false" variableLength="false">NUnitXml</command:parameterValue>
-						<command:parameterValue required="false" variableLength="false">LegacyNUnitXML</command:parameterValue>
-					</command:parameterValueGroup>
-					<dev:type>
-						<maml:name>String</maml:name>
-						<maml:uri />
-					</dev:type>
-					<dev:defaultValue></dev:defaultValue>
-				</command:parameter>
-			</command:syntaxItem>
-		</command:syntax>
-		<command:parameters>
-			<!--All Parameters-->
-			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="False" position="named">
-				<maml:name>Path</maml:name>
-				<maml:description>
-					<maml:para>Path to the PowerShell script(s) to be tested. This can be a folder path, or path to a PowerShell script file (.ps1, .psd1 and .psm1)</maml:para>
-				</maml:description>
-				<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-				<dev:type>
-					<maml:name>String</maml:name>
-					<maml:uri />
-				</dev:type>
-				<dev:defaultValue></dev:defaultValue>
-			</command:parameter>
-			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="False" position="named">
-				<maml:name>recurse</maml:name>
-				<maml:description>
-					<maml:para>When the path is referencing a directory, use -recurse parameter to retrieve all PowerShell scripts within the directory and all its sub-directories.</maml:para>
-				</maml:description>
-				<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
-				<dev:type>
-					<maml:name>SwitchParameter</maml:name>
-					<maml:uri />
-				</dev:type>
-				<dev:defaultValue></dev:defaultValue>
-			</command:parameter>
-			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="False" position="named">
-				<maml:name>CustomRulePath</maml:name>
-				<maml:description>
-					<maml:para>Specify the directory that contains custom PowerShell Script Analyzer rules. When specified, all custom rules located in this directory and its sub-directories will be retrieved and used</maml:para>
-				</maml:description>
-				<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-				<dev:type>
-					<maml:name>String</maml:name>
-					<maml:uri />
-				</dev:type>
-				<dev:defaultValue></dev:defaultValue>
-			</command:parameter>
-			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="False" position="named">
-				<maml:name>MinimumSeverityLevel</maml:name>
-				<maml:description>
-					<maml:para>Specify the minimum severity level that is going be flagged in the PS Script Analyzer test. Possible values are "Information", "Warning" and "Error". The default value is "Error"
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" variableLength="false">Information</command:parameterValue>
+            <command:parameterValue required="false" variableLength="false">Warning</command:parameterValue>
+            <command:parameterValue required="false" variableLength="false">Error</command:parameterValue>
+          </command:parameterValueGroup>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue></dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+          <maml:name>OutputFile</maml:name>
+          <maml:description>
+            <maml:para>Pester test output (xml) file</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue></dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+          <maml:name>OutputFormat</maml:name>
+          <maml:description>
+            <maml:para>Pester test output format. Possible values are: 'NUnitXml', 'LegacyNUnitXML'</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" variableLength="false">NUnitXml</command:parameterValue>
+            <command:parameterValue required="false" variableLength="false">LegacyNUnitXML</command:parameterValue>
+          </command:parameterValueGroup>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue></dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <!--All Parameters-->
+      <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="False" position="named">
+        <maml:name>Path</maml:name>
+        <maml:description>
+          <maml:para>Path to the PowerShell script(s) to be tested. This can be a folder path, or path to a PowerShell script file (.ps1, .psd1 and .psm1)</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="False" position="named">
+        <maml:name>recurse</maml:name>
+        <maml:description>
+          <maml:para>When the path is referencing a directory, use -recurse $true parameter to retrieve all PowerShell scripts within the directory and all its sub-directories.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="False" position="named">
+        <maml:name>CustomRulePath</maml:name>
+        <maml:description>
+          <maml:para>Specify the directory that contains custom PowerShell Script Analyzer rules. When specified, all custom rules located in this directory and its sub-directories will be retrieved and used</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="False" position="named">
+        <maml:name>MinimumSeverityLevel</maml:name>
+        <maml:description>
+          <maml:para>Specify the minimum severity level that is going be flagged in the PS Script Analyzer test. Possible values are "Information", "Warning" and "Error". The default value is "Error"
 When "Information" is used, rule violations with Information severity and above will be reported (Information, Warning and Error). This is the most comprehensive setting
 When "Warning" is used, rule violations with Warning severity and above will be reported (Warning and Error).
 When the default value "Error" is used, only rule violations with Error severity will be reported.</maml:para>
-				</maml:description>
-				<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-				<command:parameterValueGroup>
-					<command:parameterValue required="false" variableLength="false">Information</command:parameterValue>
-					<command:parameterValue required="false" variableLength="false">Warning</command:parameterValue>
-					<command:parameterValue required="false" variableLength="false">Error</command:parameterValue>
-				</command:parameterValueGroup>
-				<dev:type>
-					<maml:name>String</maml:name>
-					<maml:uri />
-				</dev:type>
-				<dev:defaultValue></dev:defaultValue>
-			</command:parameter>
-			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="False" position="named">
-				<maml:name>OutputFile</maml:name>
-				<maml:description>
-					<maml:para>Pester test output (xml) file</maml:para>
-				</maml:description>
-				<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-				<dev:type>
-					<maml:name>String</maml:name>
-					<maml:uri />
-				</dev:type>
-				<dev:defaultValue></dev:defaultValue>
-			</command:parameter>
-			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="False" position="named">
-				<maml:name>OutputFormat</maml:name>
-				<maml:description>
-					<maml:para>Pester test output format. Possible values are: 'NUnitXml', 'LegacyNUnitXML'</maml:para>
-				</maml:description>
-				<command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-				<command:parameterValueGroup>
-					<command:parameterValue required="false" variableLength="false">NUnitXml</command:parameterValue>
-					<command:parameterValue required="false" variableLength="false">LegacyNUnitXML</command:parameterValue>
-				</command:parameterValueGroup>
-				<dev:type>
-					<maml:name>String</maml:name>
-					<maml:uri />
-				</dev:type>
-				<dev:defaultValue></dev:defaultValue>
-			</command:parameter>
-		</command:parameters>
-		<command:inputTypes>
-			<!--Inputs-->
-			<command:inputType>
-				<dev:type>
-					<maml:name>None
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <command:parameterValueGroup>
+          <command:parameterValue required="false" variableLength="false">Information</command:parameterValue>
+          <command:parameterValue required="false" variableLength="false">Warning</command:parameterValue>
+          <command:parameterValue required="false" variableLength="false">Error</command:parameterValue>
+        </command:parameterValueGroup>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="false" globbing="false" pipelineInput="False" position="named">
+        <maml:name>OutputFile</maml:name>
+        <maml:description>
+          <maml:para>Pester test output (xml) file</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="false" globbing="false" pipelineInput="False" position="named">
+        <maml:name>OutputFormat</maml:name>
+        <maml:description>
+          <maml:para>Pester test output format. Possible values are: 'NUnitXml', 'LegacyNUnitXML'</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <command:parameterValueGroup>
+          <command:parameterValue required="false" variableLength="false">NUnitXml</command:parameterValue>
+          <command:parameterValue required="false" variableLength="false">LegacyNUnitXML</command:parameterValue>
+        </command:parameterValueGroup>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue></dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <!--Inputs-->
+      <command:inputType>
+        <dev:type>
+          <maml:name>None
 </maml:name>
-					<maml:uri></maml:uri>
-				</dev:type>
-				<maml:description>
-					<maml:para></maml:para>
-				</maml:description>
-			</command:inputType>
-		</command:inputTypes>
-		<command:returnValues>
-			<!--Outputs-->
-			<command:returnValue>
-				<dev:type>
-					<maml:name>System.Object</maml:name>
-					<maml:uri></maml:uri>
-				</dev:type>
-				<maml:description>
-					<maml:para></maml:para>
-				</maml:description>
-			</command:returnValue>
-		</command:returnValues>
-		<command:examples>
-			<!--Examples-->
-			<command:example>
-				<maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
-				<maml:introduction>
-					<maml:para />
-				</maml:introduction>
-				<dev:code>C:\PS&gt; Test-PSScriptAnalyzerRule -Path "C:\MyScriptFolder" -recurse</dev:code>
-				<dev:remarks>
-					<maml:para>Test all scripts in a folder and its subfolders and display Pester result on the PowerShell host</maml:para>
-				</dev:remarks>
-			</command:example>
-			<command:example xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10">
-				<maml:title xmlns:maml="http://schemas.microsoft.com/maml/2004/10">-------------------------- EXAMPLE 2 --------------------------</maml:title>
-				<maml:introduction xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
-					<maml:para />
-				</maml:introduction>
-				<dev:code xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">C:\PS&gt; Test-PSScriptAnalyzerRule -Path "C:\MyScriptFolder\MyScript.ps1" -MinimumSeverityLevel 'Warning' -CustomRulePath "C:\MyCustomRules\"</dev:code>
-				<dev:remarks xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
-					<maml:para>Test a single with minimum severity level of Warning, including custom rules located in a folder and display Pester result on the PowerShell host</maml:para>
-				</dev:remarks>
-			</command:example>
-			<command:example xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10">
-				<maml:title xmlns:maml="http://schemas.microsoft.com/maml/2004/10">-------------------------- EXAMPLE 3 --------------------------</maml:title>
-				<maml:introduction xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
-					<maml:para />
-				</maml:introduction>
-				<dev:code xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">C:\PS&gt; Test-PSScriptAnalyzerRule -Path "C:\MyScriptFolder\MyScript.ps1" -MinimumSeverityLevel 'Information -OutputFile "C:\Temp\MyTestResult.xml"</dev:code>
-				<dev:remarks xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
-					<maml:para>Test a single with minimum severity level of Information and store test result in a file</maml:para>
-				</dev:remarks>
-			</command:example>
-			<command:example xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10">
-				<maml:title xmlns:maml="http://schemas.microsoft.com/maml/2004/10">-------------------------- EXAMPLE 4 --------------------------</maml:title>
-				<maml:introduction xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
-					<maml:para />
-				</maml:introduction>
-				<dev:code xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">C:\PS&gt; Test-PSScriptAnalyzerRule -Path "C:\MyScriptFolder\MyScript.ps1" -MinimumSeverityLevel 'Information -OutputFile "C:\Temp\MyTestResult.xml" -OutputFormat 'LegacyNUnitXML'</dev:code>
-				<dev:remarks xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
-					<maml:para>Test a single with default severity level of Information and store test result in a file with the 'LegacyNUnitXML' format</maml:para>
-				</dev:remarks>
-			</command:example>
-		</command:examples>
-	</command:command>
-	<!--Generated by: SAPIEN PowerShell HelpWriter 2018 v2.2.39-->
+          <maml:uri></maml:uri>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <!--Outputs-->
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+          <maml:uri></maml:uri>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <command:examples>
+      <!--Examples-->
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <maml:introduction>
+          <maml:para />
+        </maml:introduction>
+        <dev:code>C:\PS&gt; Test-PSScriptAnalyzerRule -Path "C:\MyScriptFolder" -recurse $true</dev:code>
+        <dev:remarks>
+          <maml:para>Test all scripts in a folder and its subfolders and display Pester result on the PowerShell host</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10">
+        <maml:title xmlns:maml="http://schemas.microsoft.com/maml/2004/10">-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <maml:introduction xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
+          <maml:para />
+        </maml:introduction>
+        <dev:code xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">C:\PS&gt; Test-PSScriptAnalyzerRule -Path "C:\MyScriptFolder\MyScript.ps1" -MinimumSeverityLevel 'Warning' -CustomRulePath "C:\MyCustomRules\"</dev:code>
+        <dev:remarks xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+          <maml:para>Test a single with minimum severity level of Warning, including custom rules located in a folder and display Pester result on the PowerShell host</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10">
+        <maml:title xmlns:maml="http://schemas.microsoft.com/maml/2004/10">-------------------------- EXAMPLE 3 --------------------------</maml:title>
+        <maml:introduction xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
+          <maml:para />
+        </maml:introduction>
+        <dev:code xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">C:\PS&gt; Test-PSScriptAnalyzerRule -Path "C:\MyScriptFolder\MyScript.ps1" -MinimumSeverityLevel 'Information -OutputFile "C:\Temp\MyTestResult.xml"</dev:code>
+        <dev:remarks xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+          <maml:para>Test a single with minimum severity level of Information and store test result in a file</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10">
+        <maml:title xmlns:maml="http://schemas.microsoft.com/maml/2004/10">-------------------------- EXAMPLE 4 --------------------------</maml:title>
+        <maml:introduction xmlns:maml="http://schemas.microsoft.com/maml/2004/10">
+          <maml:para />
+        </maml:introduction>
+        <dev:code xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">C:\PS&gt; Test-PSScriptAnalyzerRule -Path "C:\MyScriptFolder\MyScript.ps1" -MinimumSeverityLevel 'Information -OutputFile "C:\Temp\MyTestResult.xml" -OutputFormat 'LegacyNUnitXML'</dev:code>
+        <dev:remarks xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+          <maml:para>Test a single with default severity level of Information and store test result in a file with the 'LegacyNUnitXML' format</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+  </command:command>
+  <!--Generated by: SAPIEN PowerShell HelpWriter 2018 v2.2.39-->
 </helpItems>
